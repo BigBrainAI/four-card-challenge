@@ -15,8 +15,11 @@ b. Paragrhaph at top left after title
 c. Img at bottom right
 d. Top Border, Differnt Colors for each card, color relative to image
 */
-html {
+body {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden
 }
 
 header {
@@ -25,6 +28,8 @@ header {
 
 h1 {
   font-weight: 200;
+  margin-bottom: 0;
+  margin-bottom: 0.3em;
   font-size: 3em;
   line-height: 1;
   letter-spacing: 1px;
@@ -33,6 +38,14 @@ h1 {
 }
 
 header {
+  text-align: center;
+  margin-bottom: 5em;
+}
+
+footer {
+  position: absolute;
+  bottom: 1em;
+  width: 100%;
   text-align: center;
 }
 
@@ -72,7 +85,6 @@ img {
 .main {
   width: 1440px;
   margin: 3em auto;
-  height: 50vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 2em;
@@ -88,9 +100,9 @@ img {
   position: relative;
   width: auto;
   height: 320px;
-  padding-left: 2em;
+  padding: 2em 0 0 2em;
   border-radius: 0.3em;
-  box-shadow: 15px 15px 15px #f2f2f2;
+  box-shadow: 0 15px 15px #f2f2f2;
 }
 
 .left {
@@ -128,5 +140,9 @@ img {
 
   .top {
     margin-bottom: 2em;
+  }
+
+  footer {
+    position: relative;
   }
 }
