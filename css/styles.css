@@ -1,0 +1,132 @@
+/*
+1. General Layout: Center
+2. Header (H1)
+ a. First Line Text Decoration: None (DarkGrey)
+ b. Second Line Text Decoratio: Bold (DarkGrey)
+3. h5 (color: grey)
+4. Card Layout
+ a. 1st top Center
+ b. 2nd bottom Center
+ c. 3rd left
+ d. right
+5. Common Things In Cards
+a. Title at top left (bold)
+b. Paragrhaph at top left after title
+c. Img at bottom right
+d. Top Border, Differnt Colors for each card, color relative to image
+*/
+html {
+  box-sizing: border-box;
+}
+
+header {
+  margin-top: 5em;
+}
+
+h1 {
+  font-weight: 200;
+  font-size: 3em;
+  line-height: 1;
+  letter-spacing: 1px;
+  font-family: 'Poppins', sans-serif;
+  color: #4d4d4d;
+}
+
+header {
+  text-align: center;
+}
+
+.haha {
+  font-size: 140%;
+  color: hsl(229, 6%, 66%)
+}
+
+.lol {
+  font-size: 300%;
+  margin: 0 auto 0 auto;
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 2px 0 #4d4d4d;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: #4d4d4d;
+}
+
+h3 {
+  font-size: 170%;
+  color: #4d4d4d;
+}
+
+img {
+  position: absolute;
+  right: 2em;
+  bottom: 2em;
+  width: 95px;
+}
+
+.boi {
+  line-height: 1.5;
+  font-size: 130%;
+  color: hsl(229, 6%, 66%);
+}
+
+.main {
+  width: 1440px;
+  margin: 3em auto;
+  height: 50vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2em;
+  align-items: center;
+}
+
+.column {
+  width: 100%;
+  display: inline-block;
+}
+
+.card {
+  position: relative;
+  width: auto;
+  height: 320px;
+  padding-left: 2em;
+  border-radius: 0.3em;
+  box-shadow: 15px 15px 15px #f2f2f2;
+}
+
+.left {
+  border-top: 5px solid hsl(180, 62%, 55%);
+}
+
+.top {
+  border-top: 5px solid hsl(0, 78%, 62%);
+  margin-bottom: 2em;
+}
+
+.bottom {
+  border-top: 5px solid hsl(34, 97%, 64%);
+}
+
+.right {
+  border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+@media screen and (max-width: 1440px) {
+  .main {
+    width: 100%;
+    grid-template-columns: 1fr;
+    margin: 3em auto;
+  }
+
+  .card {
+    max-width: 500px;
+    height: 320px;
+  }
+
+  .left, .right, .top, .bottom {
+    margin: auto;
+  }
+
+  .top {
+    margin-bottom: 2em;
+  }
+}
